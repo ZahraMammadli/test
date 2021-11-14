@@ -1,0 +1,128 @@
+:root {
+  --pagecolor: #f5f4f0;
+  --headercolor: rgb(73, 72, 72);
+  --fontf: "graphik";
+  --textspace: pre-line;
+  --aboutmecolor: #a4c5c7;
+  --navcolor: #a4c5c7;
+  --aboutmeheigh: 110px;
+  --workheigh: 500px;
+  --hovercolor: #c9e4de;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  text-align: center;
+  perspective: 1000px;
+  background: linear-gradient(to bottom right, #a4c5c7, #2d3f48);
+  margin: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: auto;
+}
+body:hover > label,
+body:hover > input {
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontf);
+  color: var(--headercolor);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-bottom: 0.5rem solid;
+}
+
+img {
+  width: 40%;
+  float: left;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+article,
+footer,
+header {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* This is header part */
+header {
+  text-align: center;
+  display: flex;
+}
+
+/* default navigation values */
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+nav a {
+  flex: auto;
+  text-align: center;
+  color: grey;
+  margin: 0 5px;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+/* This is main part */
+
+.portfolio {
+  display: flex;
+  float: left;
+  flex: 1 1 80%;
+  flex-wrap: wrap;
+  position: relative;
+  margin-right: 20px;
+}
+
+.aboutmeinfo p {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  position: relative;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  height: var(--aboutmeheigh);
+}
+
+.fullstack {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35%;
+  height: var(--workheigh);
+  margin-bottom: 20px;
+  opacity: 0.8;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: left;
+}
